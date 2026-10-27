@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact – AS VERT, paysagiste à Versailles (78)</title>
+<meta name="description" content="Contactez AS VERT à Versailles : formulaire de demande de devis, téléphone 06 69 99 00 09 et 06 23 11 13 30.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317301f'/%3E%3Cpath d='M32 10 54 32 32 54 10 32Z' fill='none' stroke='%23e2c27a' stroke-width='3'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%23e2c27a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="https://webaunet.github.io/as-vert/" aria-label="AS VERT, accueil">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4 60 32 32 60 4 32Z" fill="none" stroke="#e2c27a" stroke-width="3"/><path d="M32 16 48 32 32 48 16 32Z" fill="#e2c27a" fill-opacity=".18" stroke="#e2c27a" stroke-width="2"/><circle cx="32" cy="32" r="5" fill="#e2c27a"/></svg>
+      <span><b>AS VERT</b><small>Paysagiste · Versailles</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a class="link" href="index.html">Accueil</a>
+      <a class="link" href="prestations.html">Prestations</a>
+      <a class="link" href="a-propos.html">À propos</a>
+      <a class="link" href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-or call" href="tel:+33669990009" aria-label="Appeler le 06 69 99 00 09"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span class="num">06 69 99 00 09</span></a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu"><span></span></button>
+    </div>
+  </div>
+</header>
+<main>
+<section class="sec sec-vert pattern" aria-labelledby="t1" style="padding-bottom:6rem">
+  <div class="wrap contact-grid">
+    <div class="form-card" id="carte">
+      <span class="eyebrow" style="color:var(--brique)">Demande de devis</span>
+      <h1 id="t1" style="font-size:2.6rem">Décrivez votre besoin.</h1>
+      <form id="f" novalidate>
+        <div class="field"><label for="nom">Nom</label><input id="nom" name="nom" type="text" autocomplete="name" required aria-describedby="e-nom"><div class="err" id="e-nom" role="alert">Indiquez votre nom.</div></div>
+        <div class="field"><label for="tel">Téléphone</label><input id="tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" required aria-describedby="e-tel"><div class="err" id="e-tel" role="alert">Indiquez un numéro valide (10 chiffres).</div></div>
+        <div class="field"><label for="commune">Commune</label><input id="commune" name="commune" type="text" autocomplete="address-level2" required aria-describedby="e-commune"><div class="err" id="e-commune" role="alert">Indiquez la commune du jardin.</div></div>
+        <div class="field"><label for="besoin">Votre besoin</label><select id="besoin" name="besoin" required aria-describedby="e-besoin"><option value="">Choisir…</option><option>Entretien de jardin</option><option>Aménagement paysager</option><option>Création d'espaces verts</option><option>Autre demande</option></select><div class="err" id="e-besoin" role="alert">Choisissez un besoin.</div></div>
+        <div class="field"><label for="msg">Message <small>(facultatif)</small></label><textarea id="msg" name="msg"></textarea></div>
+        <button class="btn btn-vert" type="submit">Préparer ma demande</button>
+      </form>
+      <div class="recap" id="recap" aria-live="polite">
+        <p class="ok">Votre demande est prête. Choisissez comment l'envoyer :</p>
+        <pre id="txt"></pre>
+        <div class="btns"><a class="btn btn-vert" id="sms" href="sms:+33669990009">Envoyer par SMS</a><button class="btn btn-ligne" id="copy" type="button" style="color:var(--buis)">Copier</button><a class="btn btn-or" href="tel:+33669990009">Appeler</a></div>
+        <p class="note" id="copied" role="status"></p>
+      </div>
+    </div>
+    <div class="side">
+      <div class="box"><h3>Par téléphone</h3><a href="tel:+33669990009">06 69 99 00 09</a><br><a href="tel:+33623111330">06 23 11 13 30</a></div>
+      <div class="box"><h3>Adresse</h3><address>AS VERT<br>2 allée Emmanuel Chabrier<br>78000 Versailles</address></div>
+      <p style="color:#d8d2bf;margin:0">Dirigeant : Gregory Renard. Chaque prestation est proposée sur devis.</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap row">
+    <div>
+      <b style="font-family:var(--serif);font-size:1.6rem;letter-spacing:.14em;color:var(--gravier)">AS VERT</b>
+      <address>2 allée Emmanuel Chabrier, 78000 Versailles</address>
+      <small>Maquette de présentation</small>
+    </div>
+    <nav class="links" aria-label="Pied de page">
+      <a href="index.html">Accueil</a><a href="prestations.html">Prestations</a><a href="a-propos.html">À propos</a><a href="contact.html">Contact</a>
+    </nav>
+    <div><a href="tel:+33669990009">06 69 99 00 09</a><br><a href="tel:+33623111330">06 23 11 13 30</a></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script>
+(function(){
+  var f=document.getElementById('f'),rc=document.getElementById('recap');
+  function chk(id,ok){var fl=document.getElementById(id).closest('.field');fl.classList.toggle('bad',!ok);document.getElementById(id).setAttribute('aria-invalid',!ok);return ok;}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=function(id){return document.getElementById(id).value.trim()};
+    var digits=v('tel').replace(/[\s.\-]/g,'').replace(/^\+33/,'0');
+    var ok=[chk('nom',v('nom').length>1),chk('tel',/^0[1-9]\d{8}$/.test(digits)),chk('commune',v('commune').length>1),chk('besoin',v('besoin')!=='')];
+    if(ok.indexOf(false)>-1){var b=f.querySelector('.bad input,.bad select');if(b)b.focus();return;}
+    var t='Demande de devis AS VERT\nNom : '+v('nom')+'\nTéléphone : '+v('tel')+'\nCommune : '+v('commune')+'\nBesoin : '+v('besoin')+(v('msg')?'\nMessage : '+v('msg'):'');
+    document.getElementById('txt').textContent=t;
+    document.getElementById('sms').href='sms:+33669990009?&body='+encodeURIComponent(t);
+    rc.classList.add('show');f.style.display='none';rc.scrollIntoView({behavior:'smooth',block:'center'});
+  });
+  document.getElementById('copy').addEventListener('click',function(){
+    var t=document.getElementById('txt').textContent,m=document.getElementById('copied');
+    function done(s){m.textContent=s}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){done('Demande copiée.')},function(){done('Copie impossible : sélectionnez le texte ci-dessus.')});}
+    else{var r=document.createRange();r.selectNodeContents(document.getElementById('txt'));var s=getSelection();s.removeAllRanges();s.addRange(r);done('Texte sélectionné : copiez-le.');}
+  });
+})();
+</script>
+</body>
+</html>
