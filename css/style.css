@@ -216,3 +216,9 @@ p{margin:0 0 1em}
   .split .media.tall img{aspect-ratio:16/10;border-radius:var(--r)}
 }
 @media(max-width:520px){.recap .btns{grid-template-columns:1fr}}
+@media(max-width:520px){
+  .site-footer .links{gap:0 .7rem;flex-wrap:nowrap}
+  .site-footer .row>div:last-child{gap:.9rem}
+  .site-footer small{display:inline;margin-left:.5rem}
+  .site-footer address{display:inline}
+}
